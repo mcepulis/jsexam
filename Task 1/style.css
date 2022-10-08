@@ -55,11 +55,23 @@ form {
 #svoris {
   background: #187b0f;
   font-size: xx-large;
+  color: red;
   padding: 5px;
   margin-left: 10%;
   margin-right: 10%;
 }
 
+#poundsId {
+  color: black;
+}
+
+#gramsId {
+  color: black;
+}
+
+#ouncesId {
+  color: black;
+}
 
 /* Tablet */
 @media screen and (min-width: 768px) {
