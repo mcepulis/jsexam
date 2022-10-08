@@ -19,9 +19,7 @@ function Calculator(a,b) {
     }
     this.division = function (a, b) {
       return this.avalue / this.bvalue
-  
     }
-  
   }
   
   let result = new Calculator(8, 8)

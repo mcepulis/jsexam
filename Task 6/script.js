@@ -20,8 +20,6 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
 
-
-
  function getUserAverageAge (arr) {
   const { length } = arr;
   return arr.reduce((acc, val) => {

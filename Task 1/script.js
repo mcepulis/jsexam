@@ -8,25 +8,43 @@ pamatyti jo pateikto svorio kovertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
-let outputDIV = document.getElementById('output');
-outputDIV.innerText = "Father";
-let lbDiv = document.createElement('div');
-lbDiv.innerText = convertFromKg;
-outputDIV.appendChild(lbDiv);
+const form = document.querySelector("form");
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+        const kgNumber = document.querySelector("input");
+        document.getElementById("poundsId").innerHTML=kgNumber.value*2.2046;
+        document.getElementById("gramsId").innerHTML=kgNumber.value/0.001;
+        document.getElementById("ouncesId").innerHTML=kgNumber.value*35.274;
+    }
+  )
+    let result = document.getElementById("submit-btn");
+    result.addEventListener("keyup", function(event) {
+    document.getElementById("submit-btn").click();
+      }
+    )
 
-let kgValue = document.getElementById('search')
-// let lbValue = document.createElement('div');
-// let gValue = document.createElement('div');
-// let ozValue = document.createElement('div');
 
-let convertFromKg = () => {
-    let kg = kgValue.target.value
-    lbDiv = kg * 2.2046
-    // gValue = kg / 0.0010000
-    // ozValue = kg * 35.274
-  } 
 
-//   console.log(convertFromKg)
+
+// let outputDIV = document.getElementById('output');
+// outputDIV.innerText = "Father";
+// let lbDiv = document.createElement('div');
+// lbDiv.innerText = convertFromKg;
+// outputDIV.appendChild(lbDiv);
+
+// let kgValue = document.getElementById('search')
+// // let lbValue = document.createElement('div');
+// // let gValue = document.createElement('div');
+// // let ozValue = document.createElement('div');
+
+// let convertFromKg = () => {
+//     let kg = kgValue.target.value
+//     lbDiv = kg * 2.2046
+//     // gValue = kg / 0.0010000
+//     // ozValue = kg * 35.274
+//   } 
+
+// //   console.log(convertFromKg)
 
 // console.log(lbDiv.addEventListener = ("submit-btn", convertFromKg))
 // console.log(document.querySelector("form").addEventListener("submit", convertFromKg))

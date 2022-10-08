@@ -9,6 +9,7 @@ Pastaba: Informacija apie automobilį (brand) (jo kortelė) bei turi turėti
 bent minimalų stilių;
 -------------------------------------------------------------------------- */
 
+//!!! Jeigu langas be rezultato, atidaryti per "Live Server" !!!
 const ENDPOINT = 'cars.json';
 fetch ('cars.json')
 .then(x => x.json())
